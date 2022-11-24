@@ -1,4 +1,4 @@
 # apache-metamask-ropsten
-An Apache-based webapp capable of interacting with smart contract valueChecker deployed at address 0xf5fa16c0aacf3e21fd002864d4c7ddffe7ee7b1c on Ropsten testnet.
+An Apache-based webapp capable of interacting with smart contract valueChecker deployed at address 0xf34dce9a680846c1f598e796e25c82b5794d6843 on Goerli testnet.
 
-Make sure you have proper access to Ropsten through MetaMask.
+Make sure you have proper access to Goerli through MetaMask.

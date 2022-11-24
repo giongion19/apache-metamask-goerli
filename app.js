@@ -9,7 +9,8 @@ const web3Version = document.getElementById('web3Version');
 web3Version.innerHTML = web3.version;
 
 //const GANACHE_CONTRACT_ADDRESS = "0x709bB54b4a5941a4062a413484CF1659a6A84313" //Ganache contract address (value-checker workspace)
-const ROPSTEN_CONTRACT_ADDRESS = "0xf5fa16c0aacf3e21fd002864d4c7ddffe7ee7b1c" //Rospten contract addres
+//const ROPSTEN_CONTRACT_ADDRESS = "0xf5fa16c0aacf3e21fd002864d4c7ddffe7ee7b1c" //Rospten contract address
+const GOERLI_CONTRACT_ADDRESS = "0xf34dce9a680846c1f598e796e25c82b5794d6843" //Goerli contract address
 
 var simpleContract = new web3.eth.Contract(
 [
@@ -59,11 +60,11 @@ var simpleContract = new web3.eth.Contract(
 		"type": "function"
 	}
 ], 
-ROPSTEN_CONTRACT_ADDRESS); // use the relevant testnet contract address
+GOERLI_CONTRACT_ADDRESS); // use the relevant testnet contract address
 
 console.log(simpleContract);
 const showContractAccount = document.querySelector('.showContractAccount');
-showContractAccount.textContent = ROPSTEN_CONTRACT_ADDRESS;
+showContractAccount.textContent = GOERLI_CONTRACT_ADDRESS;
 
 const ethereumButton = document.querySelector('.enableEthereumButton');
 const showAccount = document.querySelector('.showAccount');
